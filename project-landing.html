@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Landing Page | Rounak Srivastava</title>
+  <style>
+    :root {
+      --bg: #020617;
+      --bg-alt: #0b1120;
+      --accent: #22c55e;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1f2937 0, #020617 50%, #000 100%);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .back-link span {
+      font-size: 1rem;
+    }
+    .card {
+      background: var(--bg-alt);
+      border-radius: 1.2rem;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      padding: 1.8rem 1.6rem 1.8rem;
+      box-shadow: 0 22px 60px rgba(15, 23, 42, 0.9);
+    }
+    .title {
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .subtitle {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1.4rem;
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1.4rem;
+      font-size: 0.75rem;
+    }
+    .badge {
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      padding: 0.25rem 0.7rem;
+      color: var(--muted);
+      background: rgba(15, 23, 42, 0.9);
+    }
+    .section-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 1.4rem 0 0.4rem;
+    }
+    .section-text {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    ul {
+      margin-top: 0.4rem;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    li + li {
+      margin-top: 0.2rem;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 1.5rem;
+    }
+    .btn {
+      border-radius: 999px;
+      padding: 0.5rem 1.2rem;
+      font-size: 0.85rem;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--text);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #22c55e, #4ade80);
+      border-color: rgba(34, 197, 94, 0.4);
+      color: #022c22;
+      font-weight: 600;
+    }
+    @media (max-width: 640px) {
+      body { padding: 1.8rem 1.2rem 2.4rem; }
+      .card { padding: 1.5rem 1.3rem 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">
+      <span>←</span>
+      <span>Back to portfolio</span>
+    </a>
+
+    <div class="card">
+      <h1 class="title">Responsive Landing Page</h1>
+      <p class="subtitle">
+        A modern, mobile‑first landing page focused on clean layout, clear hierarchy, and smooth scrolling
+        interactions.
+      </p>
+
+      <div class="badge-row">
+        <span class="badge">HTML5</span>
+        <span class="badge">CSS3</span>
+        <span class="badge">Responsive Design</span>
+        <span class="badge">Flexbox</span>
+      </div>
+
+      <h2 class="section-title">Overview</h2>
+      <p class="section-text">
+        This project is a single‑page marketing site designed to look great on phones, tablets, and desktops.
+        It includes a hero section, features, call‑to‑action, and a simple pricing layout, all built with
+        semantic HTML and modern CSS.
+      </p>
+
+      <h2 class="section-title">What I focused on</h2>
+      <ul>
+        <li>Building a pixel‑perfect layout using Flexbox and CSS Grid.</li>
+        <li>Making sure the design is fully responsive from 320px to large screens.</li>
+        <li>Using reusable utility classes for spacing and typography.</li>
+        <li>Adding smooth scrolling and subtle hover effects.</li>
+      </ul>
+
+      <h2 class="section-title">Tech stack</h2>
+      <ul>
+        <li>HTML5 for structure and accessibility.</li>
+        <li>CSS3 with Flexbox and Grid for layout.</li>
+        <li>Basic JavaScript for interaction (scroll behavior, minor effects).</li>
+      </ul>
+
+      <div class="links">
+        <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer">
+          Live demo (add link)
+        </a>
+        <a class="btn" href="#" target="_blank" rel="noreferrer">
+          GitHub repo (add link)
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+

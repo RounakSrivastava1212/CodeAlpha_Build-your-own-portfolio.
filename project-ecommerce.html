@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E‑commerce UI | Rounak Srivastava</title>
+  <style>
+    :root {
+      --bg: #020617;
+      --bg-alt: #0b1120;
+      --accent: #22c55e;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1f2937 0, #020617 50%, #000 100%);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .back-link span {
+      font-size: 1rem;
+    }
+    .card {
+      background: var(--bg-alt);
+      border-radius: 1.2rem;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      padding: 1.8rem 1.6rem 1.8rem;
+      box-shadow: 0 22px 60px rgba(15, 23, 42, 0.9);
+    }
+    .title {
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .subtitle {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1.4rem;
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1.4rem;
+      font-size: 0.75rem;
+    }
+    .badge {
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      padding: 0.25rem 0.7rem;
+      color: var(--muted);
+      background: rgba(15, 23, 42, 0.9);
+    }
+    .section-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 1.4rem 0 0.4rem;
+    }
+    .section-text {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    ul {
+      margin-top: 0.4rem;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    li + li {
+      margin-top: 0.2rem;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 1.5rem;
+    }
+    .btn {
+      border-radius: 999px;
+      padding: 0.5rem 1.2rem;
+      font-size: 0.85rem;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--text);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #22c55e, #4ade80);
+      border-color: rgba(34, 197, 94, 0.4);
+      color: #022c22;
+      font-weight: 600;
+    }
+    @media (max-width: 640px) {
+      body { padding: 1.8rem 1.2rem 2.4rem; }
+      .card { padding: 1.5rem 1.3rem 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">
+      <span>←</span>
+      <span>Back to portfolio</span>
+    </a>
+
+    <div class="card">
+      <h1 class="title">E‑commerce UI</h1>
+      <p class="subtitle">
+        A clean user interface for an online store, featuring product cards, filters, and a detailed product view.
+      </p>
+
+      <div class="badge-row">
+        <span class="badge">HTML5</span>
+        <span class="badge">CSS Grid</span>
+        <span class="badge">UI Design</span>
+      </div>
+
+      <h2 class="section-title">Overview</h2>
+      <p class="section-text">
+        This project explores the layout and interaction patterns of an online shop. It includes a product grid,
+        basic filtering UI, and a product detail layout with images, price, and description.
+      </p>
+
+      <h2 class="section-title">What I focused on</h2>
+      <ul>
+        <li>Using CSS Grid to create a flexible product listing layout.</li>
+        <li>Designing clean product cards with consistent spacing and hierarchy.</li>
+        <li>Adding hover states and focus styles for interactive elements.</li>
+        <li>Preparing the layout so it can later be hooked to real data.</li>
+      </ul>
+
+      <h2 class="section-title">Tech stack</h2>
+      <ul>
+        <li>Semantic HTML for structure.</li>
+        <li>CSS Grid and Flexbox for layout.</li>
+        <li>Basic JavaScript for UI interactions (filter toggles, etc.).</li>
+      </ul>
+
+      <div class="links">
+        <a class="btn btn-primary" href="#" target="_blank" rel="noreferrer">
+          Live demo (add link)
+        </a>
+        <a class="btn" href="#" target="_blank" rel="noreferrer">
+          GitHub repo (add link)
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
